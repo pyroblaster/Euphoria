@@ -26,8 +26,8 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        wiii.adapter = adapter
-        wiii.layoutManager = LinearLayoutManager(activity)
+        crypto.adapter = adapter
+        crypto.layoutManager = LinearLayoutManager(activity)
 
         val items = listOf<CurrencyModel>()
         adapter.setData(items) //podaci koje dobijes s neta
