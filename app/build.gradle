@@ -22,7 +22,7 @@ android {
     }
     androidExtensions{
         experimental = true
-    }//https://www.youtube.com/watch?v=OxHgLAA_MdA&list=PLJbE2Yu2zumCuJxu3tWULPVJL7asNrYEz&index=4
+    }
 }
 
 dependencies {
