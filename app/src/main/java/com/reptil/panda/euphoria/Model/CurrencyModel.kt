@@ -9,10 +9,10 @@ import kotlinx.android.parcel.Parcelize
 @SuppressLint("ParcelCreator")
 @Parcelize
 data class CurrencyModel(
-        @SerializedName("id") val id: String?,
-        @SerializedName("name") val name: String?,
-        @SerializedName("symbol") val symbol: String?,
-        @SerializedName("rank") val rank: String?,
+        val id: String?,
+        val name: String?,
+        val symbol: String?,
+        val rank: String?,
         @SerializedName("price_usd") val priceUsd: String?,
         @SerializedName("price_btc") val priceBtc: String?,
         @SerializedName("24h_volume_usd") val dailyVolumeUsd: String?,

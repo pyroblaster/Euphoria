@@ -44,7 +44,7 @@ class CryptoNetworkModule {
     @Singleton
     fun providesOkHttpLoggingInterceptor(context: Context): HttpLoggingInterceptor {
         return HttpLoggingInterceptor().apply {
-            level = logLevel(context.getString(R.string.okhttp_log_level))
+            level = HttpLoggingInterceptor.Level.BODY
         }
     }
 
@@ -93,7 +93,7 @@ class CryptoNetworkModule {
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient)
-                .baseUrl(context.getString(R.string.server_url))
+                .baseUrl("")
                 .build()
     }
 
@@ -110,7 +110,6 @@ class CryptoNetworkModule {
     @Singleton
     fun providesCryptoNetworkService(networkServices: NetworkServices): CryptoNetworkService =
             CryptoNetworkService(networkServices)
-
 
 
 }

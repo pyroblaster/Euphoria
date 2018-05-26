@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import com.reptil.panda.euphoria.R
 import kotlin.reflect.KProperty
 
+//TODO provjeri room/realm baze
 
 class DelegatedPreferences<T>(val context: Context, val key: String, val defaultValue: T) {
     val prefs: SharedPreferences by lazy {
