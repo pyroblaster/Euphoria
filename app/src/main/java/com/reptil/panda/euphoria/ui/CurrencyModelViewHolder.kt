@@ -9,7 +9,10 @@ class CurrencyModelViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView
 
     fun showData(currencyModel: CurrencyModel) = with(itemView){
         //todo add some data
-
         currencyName.text = currencyModel.name
+        currencyId.text=currencyModel.id
+        currencySymbol.text=currencyModel.symbol
+        currencyRank.text=currencyModel.rank
+        currencyMarketCapUsd.text=currencyModel.marketCapUsd
     }
 }
